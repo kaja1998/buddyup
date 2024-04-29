@@ -3,7 +3,7 @@
 Introducing Buddy Up – the app that helps you connect with new friends and ensures you never have to attend events alone again. Say goodbye to solo outings and hello to a vibrant social life filled with exciting company!
 
 ## Planned Features
-# Users
+### Users
 Will be able to...
 - register themselves using their personnel information
 - change and reset their password
@@ -14,6 +14,15 @@ Will be able to...
 - see posts from all the users. There will be no way to restrict the posts from any user.
 
 # Development
+
+## Code Implementation Specification
+Below are the technical specifications, will to be used in application development –
+
+- Front End - Angular 16 (with HTML5, CSS3, AJAX)
+- Design Tool - Angular Material
+- Code Repository - Git Hub
+- IDE - Visual Studio Code
+- Database - MySQL hosted in AWS
 
 ## Development server
 
