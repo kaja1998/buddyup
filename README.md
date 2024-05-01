@@ -3,6 +3,7 @@ Introducing Buddy Up – the app that helps you connect with new friends and ens
 Buddy Up is your go-to platform for meeting like-minded individuals who share your interests and passions. Whether you're into outdoor adventures, cultural experiences, or simply grabbing a coffee and chatting, Buddy Up has got you covered.
 
 # Use cases
+## Features
 Users will be able to...
 - register and create a profile
 - manage their profile details
@@ -12,6 +13,10 @@ Users will be able to...
 - hide / delete their events
 - see events from other users
 - filter events (location, category, gender, age)
+
+## Figma Prototype
+<img src="img/figma.png" width="100">
+<a href="https://www.figma.com/file/AKiE2NyCouym1NM5q1ECLs/Buddy-Up?type=design&node-id=0%3A1&mode=design&t=v0cZSpAuIryIxWVK-1">View our prototype in figma</a>
 
 # Development
 ## Code Implementation Specification
