@@ -15,7 +15,7 @@ Users will be able to...
 - filter events (location, category, gender, age)
 
 ## Figma Prototype
-<img src="img/figma.png" width="100">
+<img src="src/assets/images/figma.png" width="100" alt="">
 <a href="https://www.figma.com/file/AKiE2NyCouym1NM5q1ECLs/Buddy-Up?type=design&node-id=0%3A1&mode=design&t=v0cZSpAuIryIxWVK-1">View our prototype in figma</a>
 
 # Development
