@@ -1,0 +1,82 @@
+/* Style Headline */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30% 40% 30%;
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  text-align: center;
+  align-self: end;
+}
+
+.title h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.0;
+}
+
+
+
+/* Style buttons */
+.buttons{
+  text-align: center;
+  align-self: center;
+}
+
+.buttons button {
+  width: 70%;           /* Breite der Buttons */
+  padding: 15px 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fa {
+  padding: 0 3px 0 0;
+}
+
+.google {
+  display: block;
+  border: none;
+  color: white;
+  background-color: #011eb7;
+  margin: 0 auto 15px auto;  /* Abstand zwischen den Buttons und zentriert*/
+}
+
+.mail {
+  display: block;
+  border: none;
+  color: white;
+  background-color: black;
+  margin: 0 auto 15px auto;  /* Abstand zwischen den Buttons und zentriert*/
+}
+
+.facebook {
+  display: block;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  margin: 0 auto 15px auto;  /* Abstand zwischen den Buttons und zentriert*/
+}
+
+.apple {
+  display: block;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  margin: 0 auto 0 auto;  /* Abstand zwischen den Buttons und zentriert*/
+}
+
+.login{
+  text-align: center;
+  color: black;
+  align-self: start;
+}
+
+.login-link {
+  color: black;
+}

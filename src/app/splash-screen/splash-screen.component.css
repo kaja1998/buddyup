@@ -9,19 +9,19 @@
 }
 
 .title {
+  align-self: center;
 }
 
 .title h1 {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  color: #ffffff;
-  padding: 20% 0 0 0;
+  color: white;
 }
 
 .button {
   text-align: center;
-  padding: 40% 0 0 0;
+  align-self: center;
 }
 
 .button button {
@@ -31,6 +31,10 @@
 }
 
 .button div {
-  color: #ffffff;
+  color: white;
   padding: 5% 0 0 0;
+}
+
+.login-link {
+  color: white;
 }
