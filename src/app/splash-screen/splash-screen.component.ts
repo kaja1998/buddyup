@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatButton } from "@angular/material/button";
 
 @Component({
   selector: 'app-splash-screen',
   standalone: true,
-  imports: [RouterOutlet, MatButton],
+  imports: [RouterOutlet, MatButton, RouterLink],
   templateUrl: './splash-screen.component.html',
   styleUrl: './splash-screen.component.css'
 })
