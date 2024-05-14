@@ -12,6 +12,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class RegisterFormEmailComponent implements OnInit {
 
   userForm!: FormGroup;
+  //protected readonly FormGroup = FormGroup;
   isFormSubmitted: boolean = false;
 
   ngOnInit() {
@@ -31,5 +32,4 @@ export class RegisterFormEmailComponent implements OnInit {
     debugger;
     this.isFormSubmitted =  true;
   }
-
 }
