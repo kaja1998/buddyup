@@ -1,62 +1,58 @@
-<div class="registrieren-form">
-  <form action="">
-    <label for="vorname">
-      Name:
-    </label>
-    <input type="text"
-           id="vorname"
-           name="vorname"
-           placeholder="Vorname" required>
-    <label for="nachname">
-      Nachname:
-    </label>
-    <input type="text"
-           id="nachname"
-           name="nachname"
-           placeholder="Nachname" required>
-    <label for="straße&nr">
-      Straße und Hausnummer:
-    </label>
-    <input type="text"
-           name="straße&nr"
-           id="straße&nr"
-           placeholder="Straße und Hausnummer" required>
-    <label for="plz&stadt">
-      Postleitzahl und Stadt:
-    </label>
-    <div class="plz-stadt">
-      <input type="number"
-             name="plz"
-             id="plz&stadt"
-             placeholder="PLZ" required>
-      <input type="text"
-             name="stadt"
-             id="stadt"
-             placeholder="Stadt" required>
+<form class="row g-3 needs-validation" [formGroup]="userForm">
+  <div class="col-md-4">
+    <label class="form-label">First name</label>
+    <input type="text" class="form-control" formControlName="firstName">
+    <div class="text-danger" *ngIf="userForm.controls['firstName'].invalid && (isFormSubmitted || userForm.controls['firstName'].touched || userForm.controls['firstName'].dirty)">
+      <span *ngIf="userForm.controls['firstName'].errors?.['required']">This Is Required</span>
     </div>
-    <label for="geburtstag">
-      Geburtsdatum:
-    </label>
-    <input type="date"
-           id="geburtstag"
-           name="geburtstag"
-           placeholder="tt.mm.jjjj" required>
-    <label for="email">
-      E-Mail:
-    </label>
-    <input type="email"
-           id="email"
-           name="email"
-           placeholder="E-Mail" required>
-    <label for="choosepassword">
-      Passwort:
-    </label>
-    <input type="password"
-           id="choosepassword"
-           name="choosepassword"
-           placeholder="Passwort" required>
-    <div class="enter-button">
-      <button type="button" onclick="solve()">Registrieren</button>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Last name</label>
+    <input type="text" class="form-control"  formControlName="lastName">
+    <div class="text-danger" *ngIf="userForm.controls['lastName'].invalid   && (userForm.controls['lastName'].touched || userForm.controls['lastName'].dirty)">
+      <span *ngIf="userForm.controls['lastName'].errors?.['required']"> This IS Required </span>
+      <span *ngIf="userForm.controls['lastName'].errors?.['minlength']"> MIn 4 Charactors Required </span>
     </div>
-  </form>
-</div>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">&#64;</span>
+      <input type="text" class="form-control" formControlName="userName">
+    </div>
+    <div class="text-danger" *ngIf="userForm.controls['userName'].invalid  && (userForm.controls['userName'].touched || userForm.controls['userName'].dirty)">
+      <span *ngIf="userForm.controls['userName'].errors?.['required']"> This IS Required </span>
+      <span *ngIf="userForm.controls['userName'].errors?.['email']"> Email Is Not Proper </span>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">City</label>
+    <input type="text" class="form-control"  formControlName="city">
+
+  </div>
+  <div class="col-md-3">
+    <label class="form-label">State</label>
+    <select class="form-select" formControlName="state">
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+
+  </div>
+  <div class="col-md-3">
+    <label class="form-label">Zip</label>
+    <input type="text" class="form-control" formControlName="zipcode">
+
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" formControlName="isAgree">
+      <label class="form-check-label">
+        Agree to terms and conditions
+      </label>
+
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="button" (click)="onSubmit()">Submit form</button>
+  </div>
+</form>
