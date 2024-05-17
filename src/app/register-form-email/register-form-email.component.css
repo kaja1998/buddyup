@@ -43,6 +43,10 @@ input {
   background-color: white;
 }
 
+.state {
+  text-align: left;
+}
+
 .plz-stadt {
   display: flex;
 }
