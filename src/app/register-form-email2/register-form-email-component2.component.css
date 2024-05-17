@@ -1,5 +1,5 @@
 .title {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 100px;
 }
 
@@ -10,10 +10,26 @@
   margin: 0;
 }
 
+/*Mobile*/
+@media screen and (max-width: 650px) {
+  .register-form {
+    width: 300px;
+  }
+}
+
 .container {
   text-align: left;
 }
 
 mat-form-field{
   width: 100%;
+}
+
+.submit-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.submit-button button {
+  width: 80%;
 }
