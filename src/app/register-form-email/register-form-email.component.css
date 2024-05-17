@@ -1,14 +1,10 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
+.title {
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 .register-form {
-  padding: 10px 20px;
+  padding: 10px 30px;
   width: 500px;           /* Standardbreite für Desktop */
   text-align: center;
   margin: 0;
