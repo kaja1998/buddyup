@@ -18,12 +18,13 @@ export class RegisterFormEmailComponent implements OnInit {
   ngOnInit() {
     this.userForm =  new FormGroup({
       firstName: new FormControl("",[Validators.required]),
-      lastName: new FormControl("",[Validators.required,Validators.minLength(4)]),
-      userName:  new FormControl("",[Validators.required,Validators.email]),
-      city: new FormControl(""),
-      state: new FormControl(""),
-      zipcode: new FormControl(""),
-      isAgree: new FormControl(false)
+      lastName: new FormControl("",[Validators.required, Validators.minLength(2)]),
+      userName:  new FormControl("",[Validators.required, Validators.minLength(2)]),
+      email:  new FormControl("",[Validators.required, Validators.email, Validators.minLength(2)]),
+      city: new FormControl("",[Validators.required, Validators.minLength(2)]),
+      state: new FormControl("", [Validators.required]),
+      zipcode: new FormControl("", [Validators.required]),
+      isAgree: new FormControl(false, [Validators.required])
     })
   }
 
