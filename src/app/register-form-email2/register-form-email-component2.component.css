@@ -1,0 +1,19 @@
+.title {
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.register-form {
+  padding: 10px 100px;
+  width: 500px;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  text-align: left;
+}
+
+mat-form-field{
+  width: 100%;
+}
